@@ -8,12 +8,19 @@ nav{
     height: 12rem;
     padding-top: 2rem;
     border-bottom:@borderBottom;
-    @media (@mobileScreen) {
+    @media (@tabletScreen) {
         flex-direction: column;
-        margin-left: 0;
-        padding-left: 0;
+        align-content: center;
     };
     .left-nav-item {
+        @media (@tabletScreen) {
+            text-align: center;
+            margin: 2rem;
+        }
+        @media (@mobileScreen) {
+            margin: 1.5rem;
+            text-align: center;
+        }
         a{
             .nav-a();
             .font-a(3rem,'Indie Flower');
@@ -22,12 +29,19 @@ nav{
         };
     };
     .right-nav-item{
-        
+        @media (@tabletScreen) {
+            margin: 1rem
+        };
         a{
             padding: @paddingDesktop+3rem;
             margin: @marginDesktop;
             .nav-a();
             .font-a(2rem,'Indie Flower');
+            @media (@tabletScreen) {
+                padding: 4rem;
+                margin: 1rem 0;
+                text-align: center;
+            };
             @media (@mobileScreen) {
                 padding: 1rem;
                 margin: 0;

@@ -177,11 +177,22 @@ nav {
   padding-top: 2rem;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width:550px) {
+@media (max-width:800px) {
   nav {
     flex-direction: column;
-    margin-left: 0;
-    padding-left: 0;
+    align-content: center;
+  }
+}
+@media (max-width:800px) {
+  nav .left-nav-item {
+    text-align: center;
+    margin: 2rem;
+  }
+}
+@media (max-width:550px) {
+  nav .left-nav-item {
+    margin: 1.5rem;
+    text-align: center;
   }
 }
 nav .left-nav-item a {
@@ -193,6 +204,11 @@ nav .left-nav-item a {
   padding-right: 3rem;
   margin-right: 3rem;
 }
+@media (max-width:800px) {
+  nav .right-nav-item {
+    margin: 1rem;
+  }
+}
 nav .right-nav-item a {
   padding: 4rem;
   margin: 1rem;
@@ -201,6 +217,13 @@ nav .right-nav-item a {
   font-size: 2rem;
   font-weight: bolder;
   font-family: 'Indie Flower';
+}
+@media (max-width:800px) {
+  nav .right-nav-item a {
+    padding: 4rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
 }
 @media (max-width:550px) {
   nav .right-nav-item a {
@@ -225,6 +248,11 @@ nav .right-nav-item a {
 }
 .home header div {
   margin-bottom: 1.5rem;
+}
+@media (max-width:800px) {
+  .home {
+    padding: 1rem;
+  }
 }
 @media (max-width:550px) {
   .home {
