@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:100%;
+    margin: auto;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    border:1px dashed @silver;
+
+    @media (@mobileScreen) {
+        flex-direction: column;
+    };
+    .left-nav-item {
+        a{
+            .nav-a();
+            .font-a(3rem,'Indie Flower')
+        };
+    };
+    .right-nav-item{
+        a{
+            padding: @paddingDesktop+1.5rem;
+            margin: @marginDesktop+2rem;
+            .nav-a();
+            .font-a(2rem,'Indie Flower');
+            @media (@mobileScreen) {
+                padding: 0.5rem;
+            };
+        }
+    }
+}
