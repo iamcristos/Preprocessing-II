@@ -52,7 +52,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media (@mobileScreen){
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -92,8 +94,7 @@
       @media (@mobileScreen){
         width: 70%;
         align-items: center;
-        margin: 1rem 3.5rem;
-        border: 1px solid black;
+        margin: 1rem auto;
       };
       .btn{
         .btn-mixing(@white,@eastern-blue);
