@@ -1,1 +1,23 @@
 // Mixins in here
+
+.nav-a() {
+    color: @shark;
+    text-decoration: none;
+}
+
+.font-a(@font,@fontFamily) {
+    font-size: @font;
+    font-weight: bolder;
+    font-family: @fontFamily;
+}
+
+.btn-mixing(@color,@bgColor) {
+    color: @color;
+    background-color: @bgColor ;
+    width: 80%;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius:0.5rem
+}
